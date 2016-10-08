@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right|end"
         android:layout_margin="8dp"
-        android:src="@drawable/ic_action_fab"/>
+        android:src="@drawable/ic_action_fab"
+        app:layout_behavior="ggikko.me.practicebehaviorapp.util.CustomBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

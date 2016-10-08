@@ -1,4 +1,4 @@
-package ggikko.me.practicebehaviorapp;
+package ggikko.me.practicebehaviorapp.ui;
 
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.view.View;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import ggikko.me.practicebehaviorapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     void callOnClick(View view){
         switch (view.getId()){
             case R.id.fab:
-                Snackbar.make(findViewById(R.id.container), "Hey there!", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(findViewById(R.id.container), "Hey ggikko!", Snackbar.LENGTH_SHORT).show();
                 break;
         }
     }
