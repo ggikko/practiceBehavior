@@ -15,4 +15,11 @@
         android:src="@drawable/ic_action_fab"
         app:layout_behavior="ggikko.me.practicebehaviorapp.util.CustomBehavior"/>
 
+    <Button
+        android:id="@+id/goToSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GO TO SUB"/>
+
 </android.support.design.widget.CoordinatorLayout>

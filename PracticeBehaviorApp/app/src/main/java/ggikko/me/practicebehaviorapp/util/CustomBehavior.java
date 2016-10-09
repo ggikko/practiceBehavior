@@ -6,7 +6,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import java.util.List;
@@ -20,6 +19,7 @@ public class CustomBehavior extends CoordinatorLayout.Behavior<FloatingActionBut
 
     public CustomBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
+
     }
 
     @Override
