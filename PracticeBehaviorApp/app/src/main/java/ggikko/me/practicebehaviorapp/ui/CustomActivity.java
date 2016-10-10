@@ -2,11 +2,14 @@ package ggikko.me.practicebehaviorapp.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 
 import ggikko.me.practicebehaviorapp.R;
 
 public class CustomActivity extends AppCompatActivity {
+
+    public static String TAG = "CustomActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +19,13 @@ public class CustomActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.e(TAG, "dispatchTouchEvent()");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.e(TAG, "onTouchEvent()");
         return super.onTouchEvent(event);
     }
 }

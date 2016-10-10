@@ -2,6 +2,7 @@ package ggikko.me.practicebehaviorapp.custom;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
@@ -11,6 +12,9 @@ import android.widget.TextView;
  */
 
 public class CustomView extends TextView {
+
+    public static String TAG = "CustomView";
+
     public CustomView(Context context) {
         super(context);
     }
@@ -25,11 +29,13 @@ public class CustomView extends TextView {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.e(TAG, "dispatchTouchEvent()");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.e(TAG, "dispatchTouchEvent()");
         return super.onTouchEvent(event);
     }
 }

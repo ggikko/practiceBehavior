@@ -2,6 +2,7 @@ package ggikko.me.practicebehaviorapp.custom;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
 
@@ -10,6 +11,9 @@ import android.widget.FrameLayout;
  */
 
 public class CustomLayout extends FrameLayout {
+
+    public static String TAG = "CustomLayout";
+
     public CustomLayout(Context context) {
         super(context);
     }
@@ -24,11 +28,13 @@ public class CustomLayout extends FrameLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.e(TAG, "dispatchTouchEvent()");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onInterceptHoverEvent(MotionEvent event) {
+        Log.e(TAG, "dispatchTouchEvent()");
         return super.onInterceptHoverEvent(event);
     }
 }
