@@ -19,13 +19,13 @@ public class CustomActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.e(TAG, "dispatchTouchEvent()");
+        Log.d(TAG, "dispatchTouchEvent()");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.e(TAG, "onTouchEvent()");
+        Log.d(TAG, "onTouchEvent()");
         return super.onTouchEvent(event);
     }
 }

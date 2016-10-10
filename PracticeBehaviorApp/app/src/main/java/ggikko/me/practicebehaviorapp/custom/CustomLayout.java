@@ -28,13 +28,13 @@ public class CustomLayout extends FrameLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.e(TAG, "dispatchTouchEvent()");
+        Log.d(TAG, "dispatchTouchEvent()");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onInterceptHoverEvent(MotionEvent event) {
-        Log.e(TAG, "dispatchTouchEvent()");
+        Log.d(TAG, "dispatchTouchEvent()");
         return super.onInterceptHoverEvent(event);
     }
 }

@@ -29,13 +29,13 @@ public class CustomView extends TextView {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.e(TAG, "dispatchTouchEvent()");
+        Log.d(TAG, "dispatchTouchEvent()");
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.e(TAG, "dispatchTouchEvent()");
+        Log.d(TAG, "dispatchTouchEvent()");
         return super.onTouchEvent(event);
     }
 }
