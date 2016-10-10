@@ -18,14 +18,40 @@ public class CustomActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.d(TAG, "dispatchTouchEvent()");
-        return super.dispatchTouchEvent(ev);
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        switch (event.getActionMasked()){
+            case MotionEvent.ACTION_UP:
+                Log.d(TAG, TAG + "dispatchTouchEvent() ACTION_UP");
+                break;
+            case MotionEvent.ACTION_DOWN:
+                Log.d(TAG, TAG + "dispatchTouchEvent() ACTION_DOWN");
+                break;
+            case MotionEvent.ACTION_MOVE:
+                Log.d(TAG, TAG + "dispatchTouchEvent() ACTION_MOVE");
+                break;
+            case MotionEvent.ACTION_CANCEL:
+                Log.d(TAG, TAG + "dispatchTouchEvent() ACTION_CANCEL");
+                break;
+        }
+        return super.dispatchTouchEvent(event);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.d(TAG, "onTouchEvent()");
+        switch (event.getActionMasked()){
+            case MotionEvent.ACTION_UP:
+                Log.d(TAG, TAG + "onTouchEvent() ACTION_UP");
+                break;
+            case MotionEvent.ACTION_DOWN:
+                Log.d(TAG, TAG + "onTouchEvent() ACTION_DOWN");
+                break;
+            case MotionEvent.ACTION_MOVE:
+                Log.d(TAG, TAG + "onTouchEvent() ACTION_MOVE");
+                break;
+            case MotionEvent.ACTION_CANCEL:
+                Log.d(TAG, TAG + "onTouchEvent() ACTION_CANCEL");
+                break;
+        }
         return super.onTouchEvent(event);
     }
 }

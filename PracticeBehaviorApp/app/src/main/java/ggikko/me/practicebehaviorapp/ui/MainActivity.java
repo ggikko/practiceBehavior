@@ -15,8 +15,6 @@ import ggikko.me.practicebehaviorapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String TEST = "test8";
-
     @OnClick({R.id.fab, R.id.goToSub})
     void callOnClick(View view){
         switch (view.getId()){
@@ -37,9 +35,5 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         float ratio = 1.000000f;
-
-        Log.e("ggikko", "test0 : " +  Float.compare(ratio, 0.0f));
-        Log.e("ggikko", "test1 : " +  Float.compare(ratio, 1.0f));
-        Log.e("ggikko", "test2 : " +  Float.compare(ratio, 2.0f));
     }
 }
