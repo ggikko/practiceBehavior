@@ -15,7 +15,7 @@ import ggikko.me.practicebehaviorapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String TEST = "test5";
+    private String TEST = "test7";
 
     @OnClick({R.id.fab, R.id.goToSub})
     void callOnClick(View view){
