@@ -6,20 +6,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_behavior="ggikko.me.practicebehaviorapp.util.CustomAppbarLayoutBehavior">
+
+    </android.support.design.widget.AppBarLayout>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right|end"
         android:layout_margin="8dp"
-        android:src="@drawable/ic_action_fab"
-        app:layout_behavior="ggikko.me.practicebehaviorapp.util.CustomBehavior"/>
+        android:src="@drawable/ic_action_fab" />
+    <!--app:layout_behavior="ggikko.me.practicebehaviorapp.util.CustomBehavior"-->
 
-    <Button
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="nice"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="nice"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="nice"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ggikko.me.practicebehaviorapp.custom.CustomButton
         android:id="@+id/goToSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="GO TO SUB"/>
+        android:layout_gravity="bottom|left|end"
+        android:layout_marginBottom="10dp"
+        android:text="GO TO SUB"
+        app:layout_behavior="ggikko.me.practicebehaviorapp.util.CustomButtonBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>
